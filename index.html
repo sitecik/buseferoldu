@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŞİTAL SOHBET</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="nick-container">
+            <input type="text" id="nickInput" placeholder="Nickinizi girin...">
+            <button id="setNickButton">Onayla</button>
+        </div>
+        <div class="sidebar">
+            <h2>ŞİTAL SOHBET</h2>
+            <h3>Online Kullanıcılar</h3>
+            <ul id="userList"></ul>
+        </div>
+        <div class="main">
+            <div id="chatWindow"></div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Mesajınızı yazın...">
+                <div class="emoji-container">
+                    <span class="emoji" data-emoji="😀">😀</span>
+                    <span class="emoji" data-emoji="❤️">❤️</span>
+                    <span class="emoji" data-emoji="😂">😂</span>
+                    <span class="emoji" data-emoji="😎">😎</span>
+                    <span class="emoji" data-emoji="👍">👍</span>
+                    <span class="emoji" data-emoji="👋">👋</span>
+                </div>
+                <button id="sendButton">Gönder</button>
+            </div>
+        </div>
+        <div id="userCount">0 Aktif Kullanıcı</div>
+    </div>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
